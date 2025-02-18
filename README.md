@@ -1,10 +1,12 @@
 # programing Practices - Monte Carlo PI Approximation
 
 ## Overview
-This project is to implement the Monte Carlo method to approximate the value of PI by randomly choosing points
+
+This is a simple project where we try to estimate the value of PI using a method called Monte Carlo. The idea is to randomly place points inside a square and check how many fall inside a circle. The more points we use, the closer we get to PI.
 
 ## how to run 
-compile and run manually 
+
+### compile and run manually 
 javac -d bin src/main/java/edu/ceu/programming/practices/Practice1.java src/main/java/edu/ceu/programming/Practice1Main.java
  java -cp bin edu.ceu.programming.Practice1Main 100000
   *replace 1000 with any number to aproximate different values 
@@ -16,7 +18,8 @@ RUN WITH CUSTOM ITERATIONS
 make run 10000
 (You can replace 100000 with any number to test different approximations.)
  
- Project Structure
+ ## Project Structure
+
  ProgrammingPractices/
 │── src/main/java/edu/ceu/programming/practices/Practice1.java
 │── src/main/java/edu/ceu/programming/Practice1Main.java
@@ -24,14 +27,16 @@ make run 10000
 │── .gitignore
 │── README.md
 
-Requirements
-Java Development Kit (JDK)
-make (for using the Makefile)
-Git (for version control)
+## Requirements
 
-Monte Carlo Method
+-Java Development Kit (JDK)
+-make (for using the Makefile)
+-Git (for version control)
+
+## Monte Carlo Method
+
 Monte Carlo simulations use random sampling to estimate results. In this project, we randomly generate points inside a square and check how many fall within a circle to approximate PI.
 
-Author
+## Author
 Henry Valdez
 Universidad CEU San Pablo
