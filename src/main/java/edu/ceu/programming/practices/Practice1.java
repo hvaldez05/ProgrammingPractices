@@ -1,8 +1,8 @@
 package edu.ceu.programming.practices;
 
-/**
- * Class that contains a method to approximate PI using Monte Carlo method.
- */
+import java.util.Random;
+
+
 public class Practice1 {
 
     /**
@@ -12,7 +12,21 @@ public class Practice1 {
      * @param steps The number of iterations for the Monte Carlo simulation.
      * @return Approximated value of PI.
      */
-    public static double generatePiIterative(long steps) {
-        return 0; // TODO: Implement the Monte Carlo method
+    public static double generatePiIterative(long steps){
+        Random random = new Random();
+        long pointsInsideCircle = 0;
+
+        for (long i = 0; i < steps; i++) {
+            double x = random.nextDouble();
+            double y = random.nextDouble();
+
+            if (x * x + y * y <=1) {
+                pointsInsideCircle++;
+            }
+        } 
+ 
+
+        double piApproximation = 4.0 * pointsInsideCircle / (double) steps;
+        return piApproximation; //
     }
 }
