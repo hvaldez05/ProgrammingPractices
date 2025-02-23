@@ -27,10 +27,4 @@ public class Practice2 {
 
         return generatePiRecursive (steps -1, pointsInsideCircle);
     }
-
-    public static void main(String[] args) {
-        long steps = 1000000; // You can change this value
-        double piApprox = generatePiRecursive(steps, 0);
-        System.out.println("Approximated PI: " + piApprox);
-}
 }
