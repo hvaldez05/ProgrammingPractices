@@ -10,12 +10,19 @@ all: compile
 
 # Compile all Java files
 compile:
-	if not exist $(BIN) mkdir $(BIN)
-	$(JAVAC) -d $(BIN) $(SRC)/$(PACKAGE)/practices/Practice1.java $(SRC)/$(PACKAGE)/Practice1Main.java
-
+	
+	javac -d bin -sourcepath src/main/java src/main/java/edu/ceu/programming/Practice1Main.java src/main/java/edu/ceu/programming/Practice2Main.java src/main/java/edu/ceu/programming/Practice3Main.java
 # Run the program
-run:
-	$(JAVA) -cp $(BIN) edu.ceu.programming.Practice1Main $(filter-out $@,$(MAKECMDGOALS))
+# Run Iterative
+run-iterative:
+	java -cp bin edu.ceu.programming.Practice1Main $(steps)
 
+# Run Recursive
+run-recursive:
+	java -cp bin edu.ceu.programming.Practice2Main $(steps)
+
+# Run Stream
+run-stream:
+	java -cp bin edu.ceu.programming.Practice3Main $(steps)
 %:
 	@:
