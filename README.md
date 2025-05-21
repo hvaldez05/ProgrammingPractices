@@ -31,6 +31,17 @@ make run-stream steps=1000000
 
 (You can replace 100000 with any number to test different approximations.)
 
+### 3. Compile and Run Graph (Maven)
+### Compile the project
+mvn compile
+
+### Run the GraphExamples main class
+mvn exec:java -Dexec.mainClass=edu.ceu.programming.GraphExamples
+
+### Run the Unit Test
+mvn test
+
+
  ## Project Structure
 ```
  ProgrammingPractices/
@@ -63,6 +74,7 @@ make run-stream steps=1000000
 -  Java Development Kit (JDK)
 -  make (for using the Makefile)
 -  Git (for version control)
+-  Maven
 
 ## Monte Carlo Method
 
