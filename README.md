@@ -36,7 +36,7 @@ make run-stream steps=1000000
 mvn compile
 
 ### Run the GraphExamples main class
-mvn exec:java -Dexec.mainClass=edu.ceu.programming.GraphExamples
+mvn exec:java
 
 ### Run the Unit Test
 mvn test
